@@ -7,8 +7,7 @@ def msg(message, title=u"NPP-script"):
 
 msg(u"Script running.", u"Invisible characters")
 
-text = editor.getText().decode('utf-8')
-
+text = editor.getText()
 # List of "invisible" whitespace and control characters
 all_invis = ( 
     u'\u00A0'  # NBSP – NO-BREAK SPACE (U+00A0)
