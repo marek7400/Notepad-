@@ -17,6 +17,9 @@ RTL/LTR text direction signs - important in Arabic and Hebrew
 ![notepad-remove.jpg](images/notepad-remove.jpg)
 ![notepad-remove1.jpg](images/notepad-remove1.jpg)
 
+******************************
+Go to [https://github.com/bruderstein/PythonScript/releases](https://github.com/bruderstein/PythonScript/releases) (go to Assets) and download dll Python_Script pack and install. Then install remove-hidden-signs.py user script.
+***
 Plugin Installation and Usage
 =============================
 
@@ -39,7 +42,7 @@ The file layout is as follows::
 			|   |
 			|   |-- PythonScript.dll
 			|   |
-			|   |-- python27.dll         (maybe not necessary if you have a Python installation already, in which case it's probably in C:\windows )
+			|   |-- python312.dll         (maybe not necessary if you have a Python installation already, in which case it is probably in C:\windows )
 			|   |
 			|   |-- lib
 			|   |    \
@@ -53,7 +56,7 @@ The file layout is as follows::
 			|        \
 			|        |-- PythonScript
 			|             \
-			|             |-- index.html        (optional, if it's not there context-sensitive help will use the web)
+			|             |-- index.html        (optional, if it is not there context-sensitive help will use the web)
 			|
 			|
 			|
@@ -82,8 +85,8 @@ script to the menu, then it will appear immediately, but you will not be able to
 
 If you assign it to a toolbar icon, then it will only appear on the next start of Notepad++.
 
-Context-Sensitive help is available - if your cursor is on and notepad, editor or console function, the ``Context-Help`` menu
-will take you straight to the documentation for that function.  If the CHM file is not in the relevant location, it will open the 
+Context-Sensitive help is available - if your cursor is on a notepad, editor or console function, the ``Context-Help`` menu
+will take you straight to the documentation for that function.  If the help files are not in the relevant location from layout above, it will open the 
 documentation from the web.
 
 
@@ -96,6 +99,5 @@ The script called startup.py (in either the "machine" directory or "user" direct
 starts up.  Normally, that is the first time a script is called.  The default startup.py script does some small things like directing 
 the error output to the console, and importing some commonly used modules.  
 
-If you want to register an callback (see :ref:`Notifications`) to run from when Notepad++ starts up, you need to change the startup type
+If you want to register a callback (see :ref:`Notifications`) to run from when Notepad++ starts up, you need to change the startup type
 to ATSTARTUP, instead of LAZY.  You can do this in the Configuration dialog.
-
