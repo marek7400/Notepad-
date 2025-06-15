@@ -126,3 +126,19 @@ finally:
 4. In Notepad++, open Plugins > PythonScript > Scripts > New Script.
 5. Paste the code and save it as “rewrap82.py”, for example.
 6. Select the text and run the script.
+
+## Example:
+
+Text before:
+
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit, lorem id cursus malesuada, urna enim cursus ex, id viverra lacus quam non eros. In vitae ullamcorper est.
+```
+
+After the operation, divide into equal lines of 82 characters:
+
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit,
+lorem id cursus malesuada, urna enim cursus ex, id viverra lacus quam non eros. In
+vitae ullamcorper est.
+```
