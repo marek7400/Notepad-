@@ -167,3 +167,9 @@ In the Replace field, enter:
 (i.e., after each “piece” of 82 characters, start a new line)
 
 Click Replace All.
+****************************
+# How show macro code in Notepad++?
+
+Open file:
+
+C:\Users\yoursername\AppData\Roaming\Notepad++\shortcuts.xml
