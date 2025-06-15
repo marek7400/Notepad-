@@ -142,3 +142,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit,
 lorem id cursus malesuada, urna enim cursus ex, id viverra lacus quam non eros. In
 vitae ullamcorper est.
 ```
+# Please note:
+This tool works blindly on the ENTIRE TEXT—if the text already has line breaks, they will be ignored, and the line will be divided evenly every 82 characters, regardless of words (it may cut in the middle of a word!).
+
+## Another way
+
+Quick guide — splitting into lines every n characters using “Find and Replace”:
+Select the text you want to split/wrap.
+
+Open Find and Replace (Ctrl+H).
+
+Change the mode to Regular Expression!.
+
+In the Find field, enter:
+```
+(.{82})
+```
+(or another number, e.g. 80, 60 – whatever length of line you want)
+
+In the Replace field, enter:
+```
+\1\r\n
+```
+(i.e., after each “piece” of 82 characters, start a new line)
+
+Click Replace All.
