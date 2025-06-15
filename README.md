@@ -101,3 +101,31 @@ the error output to the console, and importing some commonly used modules.
 
 If you want to register a callback (see :ref:`Notifications`) to run from when Notepad++ starts up, you need to change the startup type
 to ATSTARTUP, instead of LAZY.  You can do this in the Configuration dialog.
+******************************************************************************
+ # NPP Text Rewrap 
+## For Notepad++ 64-bit, there is no official plugin for “Rewrap”, but you can work around this by writing a small Python script yourself.
+
+1. Open Plugins > Plugin Management.
+2. Search for and install PythonScript.
+
+Python Script plugin.
+Author: Dave Brotherstone + Jocelyn Legault
+Homepage: https://github.com/bruderstein/PythonScript
+
+3. wirte script: [Re-wrap script (e.g., 82 characters)]
+   
+```
+import textwrap
+editor.beginUndoAction()
+try:
+    start, end = editor.getSelectionStart(), editor.getSelectionEnd()
+    text = editor.getTextRange(start, end)
+    wrapped = '\r\n'.join(textwrap.wrap(text, 82))
+    editor.replaceSel(wrapped)
+finally:
+    editor.endUndoAction()
+```
+
+4. In Notepad++, open Plugins > PythonScript > Scripts > New Script.
+5. Paste the code and save it as “rewrap82.py”, for example.
+6. Select the text and run the script.
