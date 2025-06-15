@@ -173,3 +173,5 @@ Click Replace All.
 Open file:
 
 C:\Users\yoursername\AppData\Roaming\Notepad++\shortcuts.xml
+
+These actions describe actions in the form of identifiers – unfortunately, these commands are not easy to read. However, they can be interpreted with knowledge of the Scintilla API. (you can ask AI)
