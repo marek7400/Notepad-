@@ -20,11 +20,9 @@ RTL/LTR text direction signs - important in Arabic and Hebrew
 ******************************
 Go to [https://github.com/bruderstein/PythonScript/releases](https://github.com/bruderstein/PythonScript/releases) (go to Assets) and download dll Python_Script pack and install. Then install remove-hidden-signs.py user script.
 ***
-Plugin Installation and Usage
-=============================
+## Plugin Installation and Usage
 
 Installation
-------------
 
 Installation is very simple, either through PluginAdmin, or manually.  The zip archive contains the 
 files in the correct layout - just copy to your Notepad++ directory (e.g. `c:\\Program Files\\Notepad++`)
@@ -69,8 +67,8 @@ The file layout is as follows::
 							   |-- (user level scripts go here)
 
 
-Usage
------
+## Usage
+
 
 To use Python Script, you'll first need to create a script.  Click New Script from the Python Script menu in the Plugins menu.
 This creates a new user script (in your config directory).  When you've typed your script out, you can run it from the `Scripts` submenu.
@@ -90,8 +88,7 @@ will take you straight to the documentation for that function.  If the help file
 documentation from the web.
 
 
-Startup
--------
+## Startup
 
 .. _startup.py:
 
